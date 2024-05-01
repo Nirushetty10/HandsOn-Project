@@ -10,9 +10,9 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Bee from '../images/Practive_Bee.png'
 const logoStyle = {
-  width: '140px',
+  width: '75px',
   height: 'auto',
   cursor: 'pointer',
 };
@@ -82,12 +82,17 @@ function Nav({ mode }) {
               }}
             >
               <img
-                src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
-                }
+                src={Bee}
                 style={logoStyle}
                 alt="logo of sitemark"
               />
+              <Typography variant="body1" color="text.primary" sx={{
+                fontSize:'20px',
+                ml:'5px',
+                color:"#23a9f2"
+              }}>
+                    Practice Bee
+                  </Typography>
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem

@@ -14,42 +14,35 @@ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
+    title: 'Basic',
+    price: '999',
     description: [
-      '10 users included',
-      '2 GB of storage',
-      'Help center access',
-      'Email support',
+      'Ed Tech',
+      'Finance',
     ],
-    buttonText: 'Sign up for free',
+    buttonText: 'Scan and Pay',
     buttonVariant: 'outlined',
   },
   {
     title: 'Professional',
     subheader: 'Recommended',
-    price: '15',
+    price: '1499',
     description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
-      'Dedicated team',
-      'Best deals',
+      'Ecommerce',
+      'Telecom',
     ],
-    buttonText: 'Start now',
+    buttonText: 'Scan and Pay',
     buttonVariant: 'contained',
   },
   {
     title: 'Enterprise',
-    price: '30',
+    price: '2499',
     description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
+      'Social Platform',
+      'Banking',
+      'Health Care',
     ],
-    buttonText: 'Contact us',
+    buttonText: 'Scan and Pay',
     buttonVariant: 'outlined',
   },
 ];
@@ -149,10 +142,10 @@ export default function Pricing() {
                   }}
                 >
                   <Typography component="h3" variant="h2">
-                    ${tier.price}
+                    ₹{tier.price}
                   </Typography>
                   <Typography component="h3" variant="h6">
-                    &nbsp; per month
+                    &nbsp; per project
                   </Typography>
                 </Box>
                 <Divider

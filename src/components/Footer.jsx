@@ -9,17 +9,19 @@ import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
+import Bee from '../images/Practive_Bee.png'
 
 const logoStyle = {
-  width: '140px',
+  width: '75px',
   height: 'auto',
+  cursor: 'pointer',
 };
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {'Copyright © '}
-      <Link href="https://mui.com/">Sitemark&nbsp;</Link>
+      Practice Bee&nbsp;
       {new Date().getFullYear()}
     </Typography>
   );
@@ -54,14 +56,27 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <Box sx={{ ml: '-15px' }}>
+          <Box
+              sx={{
+                flexGrow: 1,
+                display: 'flex',
+                alignItems: 'center',
+                ml: '-18px',
+                px: 0,
+              }}
+            >
               <img
-                src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
-                }
+                src={Bee}
                 style={logoStyle}
                 alt="logo of sitemark"
               />
+              <Typography variant="body1" color="text.primary" sx={{
+                fontSize:'20px',
+                ml:'5px',
+                color:"#23a9f2"
+              }}>
+                    Practice Bee
+                  </Typography>
             </Box>
             <Typography variant="body2" fontWeight={600} gutterBottom>
               Get Started Today
@@ -72,7 +87,7 @@ export default function Footer() {
             <Typography variant="body2" fontWeight={700}>Contact us to learn more or enroll in our program today!</Typography>
           </Box>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
             flexDirection: 'column',
@@ -117,7 +132,7 @@ export default function Footer() {
           <Link color="text.secondary" href="#">
             Contact
           </Link>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         sx={{
@@ -152,7 +167,7 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href="https://github.com/mui"
+            // href="https://github.com/mui"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
@@ -160,7 +175,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://twitter.com/MaterialUI"
+            // href="https://twitter.com/MaterialUI"
             aria-label="X"
             sx={{ alignSelf: 'center' }}
           >
@@ -168,7 +183,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/company/mui/"
+            // href="https://www.linkedin.com/company/mui/"
             aria-label="LinkedIn"
             sx={{ alignSelf: 'center' }}
           >
