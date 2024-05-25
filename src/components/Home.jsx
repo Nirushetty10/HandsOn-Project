@@ -39,7 +39,6 @@ export default function Home() {
 
             <video width="100%" controls>
               <source src={Practice} type="video/mp4" />
-              {/* <source src="mov_bbb.ogg" type="video/ogg" /> */}
               Your browser does not support HTML video.
             </video>
           </Box>

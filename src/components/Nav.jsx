@@ -120,11 +120,11 @@ function Nav({ mode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('pricing')}
+                  onClick={() => scrollToSection('plans')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Pricing
+                    Plans
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -173,8 +173,8 @@ function Nav({ mode }) {
                   <MenuItem onClick={() => scrollToSection('ChooseUs')}>
                     Why Choose Us
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
+                  <MenuItem onClick={() => scrollToSection('plans')}>
+                    Plans
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
                 </Box>

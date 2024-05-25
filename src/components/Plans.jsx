@@ -47,14 +47,14 @@ const tiers = [
   },
 ];
 
-export default function Pricing() {
+export default function Plans() {
   return (
     <Container
-      id="pricing"
+      id="plans"
       sx={{
         width : "100%",
         pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
+        // pb: { xs: 4, sm: 16 },
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
@@ -69,13 +69,7 @@ export default function Pricing() {
         }}
       >
         <Typography component="h2" variant="h4" color="text.primary">
-          Pricing
-        </Typography>
-        <Typography variant="body1" color="text.secondary">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
-          It&apos;s built with default Material UI components with little
-          customization.
+          Plans
         </Typography>
       </Box>
       <Grid container spacing={3} alignItems="center" justifyContent="center">
